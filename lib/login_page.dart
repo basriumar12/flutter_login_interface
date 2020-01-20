@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
       tag: 'hero',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
-        radius: 48.0,
+        radius: 78.0,
         child: Image.asset('assets/images/logo.png'),
       ),
     );
@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: 'test@gmail.com',
+      initialValue: 'basriumar12@gmail.com',
       decoration: InputDecoration(
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
             print("test tes");
           },
           color: Colors.redAccent,
-          child: Text('LogIn', style: TextStyle(color: Colors.white)),
+          child: Text('Log In', style: TextStyle(color: Colors.white)),
         ),
       ),
     );
