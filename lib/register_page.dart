@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_interface/home_page.dart';
-class ForgotPage extends StatefulWidget {
+class RegisterPage extends StatefulWidget {
   static String tag = 'login-page';
   @override
-  _ForgotPageState createState() => _ForgotPageState();
+  _RegisterPageState createState() => _RegisterPageState();
 }
 
-class _ForgotPageState extends State<ForgotPage> {
+class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     final logo = Hero(
@@ -64,7 +64,7 @@ class _ForgotPageState extends State<ForgotPage> {
 
           },
           color: Colors.lightBlueAccent,
-          child: Text('Forgot Password', style: TextStyle(color: Colors.white)),
+          child: Text('Submit', style: TextStyle(color: Colors.white)),
         ),
       ),
     );
@@ -79,7 +79,7 @@ class _ForgotPageState extends State<ForgotPage> {
 
     return Scaffold(
       appBar: new AppBar(
-        title: Text("Forgot Password"),
+        title: Text("Register"),
       ),
       backgroundColor: Colors.white,
       body: Center(

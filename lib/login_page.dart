@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_interface/home_page.dart';
-import 'package:flutter_login_interface/forgot_page.dart';
+import 'package:flutter_login_interface/register_page.dart';
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
   @override
@@ -66,13 +66,13 @@ class _LoginPageState extends State<LoginPage> {
 
     final forgotLabel = FlatButton(
       child: Text(
-        'Forgot password?',
+        'Belum punya akun? Daftar sini',
         style: TextStyle(color: Colors.black54),
       ),
       onPressed: () {
         Navigator.of(context).push(MaterialPageRoute(
             builder: (context){
-              return ForgotPage();
+              return RegisterPage();
             }
         ));
       },
